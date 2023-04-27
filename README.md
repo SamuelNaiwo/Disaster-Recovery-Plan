@@ -87,13 +87,15 @@
 
 # Boto3 and S3
 
+## Download Boto3
+
+First thing to do is download boto3 using the command: `pip3 install boto3`
+
 ## Create S3 Bucket
 
-1. Download boto3 onto your instance. `pip3 install boto3`
+1. Create a new python file `sudo nano create_bucket.py`
 
-2. Create a new python file `sudo nano create_bucket.py`
-
-3. Enter this script into your python file:
+2. Enter this script into your python file:
 
 ```
 import boto3
@@ -107,7 +109,7 @@ location = {'LocationConstraint': AWS_REGION}
 response = client.create_bucket(Bucket=bucket_name, CreateBucketConfiguration=location)
 ```
 
-4. Run the following command in your terminal to create a bucket. `python3 create_bucket.py`
+3. Run the following command in your terminal to create a bucket. `python3 create_bucket.py`
 
 ## Upload file to S3 Bucket.
 
