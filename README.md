@@ -107,7 +107,7 @@ location = {'LocationConstraint': AWS_REGION}
 response = client.create_bucket(Bucket=bucket_name, CreateBucketConfiguration=location)
 ```
 
-4. Run the following command in your terminal to run the file `python3 create_bucket.py`
+4. Run the following command in your terminal to create a bucket. `python3 create_bucket.py`
 
 ## Upload file to S3 Bucket.
 
@@ -145,7 +145,7 @@ bucket_name="samuel-tech221"
 s3.download_file(bucket_name, 'test.txt', 'test.txt')
 ```
 
-3. Run the following command in your terminal to upload a file. `python3 download_file.py`
+3. Run the following command in your terminal to download a file. `python3 download_file.py`
 
 ## Delete file from S3 Bucket.
 
@@ -164,7 +164,7 @@ bucket_name="samuel-tech221"
 s3.Object(bucket_name, 'test.txt').delete()
 ```
 
-3. Run the following command in your terminal to upload a file. `python3 delete_file.py`
+3. Run the following command in your terminal to delete a file. `python3 delete_file.py`
 
 ## Delete S3 Bucket.
 
@@ -185,4 +185,4 @@ response = client.delete_bucket(
 )
 ```
 
-3. Run the following command in your terminal to upload a file. `python3 delete_file.py`
+3. Run the following command in your terminal to delete a bucket. `python3 delete_bucket.py`
