@@ -66,8 +66,8 @@
 5. Check if file is created `ls`
 6. Copy file to your folder. `aws s3 cp test.txt s3//samuel-tech221`
 7. Move file from S3 bucket to instance
-`aws s3 cp s3://Samuel-tech221/test.txt /home/ubuntu`
-8. Delete file from s3 bucket `aws s3 cp s3://samuel-tech221/test.txt`
+`aws s3 cp s3://samuel-tech221/test.txt /home/ubuntu`
+8. Delete file from s3 bucket `aws s3 rm s3://samuel-tech221/test.txt`
 9. Remove s3 bucket `aws s3 rb s3://samuel-tech221/test.txt`
 
 ## S3 Storages Classes
