@@ -33,7 +33,7 @@
 
 - Example of SDK is `boto3`.
 
-# Set Up AWS CLI
+# Connect AWS CLI to S3
 
 1.	Create a new instance with port 22 open.
 
@@ -45,7 +45,7 @@
 7.	Check python version `python3 --version`. I needed 3.6 or above.
 8.	Install python on your instance. `sudo apt install python`
 9.	Install pip on your instance. `sudo apt install python3-pip`
-10.	Tell ubuntu which version of python to use `alias python=3`
+10.	Create a environment variable to tell ubuntu which version of python to use `alias python=3`
 11.	Install AWS CLI onto your instance. `sudo python3 -m pip install awscli`
 12.	Run the command `aws configure` to enter specific details.
 13.	Copy and paste your Access Key ID which can be found in your file in your .ssh folder.
